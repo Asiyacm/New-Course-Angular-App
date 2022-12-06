@@ -7,7 +7,7 @@
     <thead>
       <tr>
        
-        <th scope="col">Course Title</th>
+        <th scope="col">Title</th>
         <th scope="col">Description</th>
         <th scope="col">Duration</th>
         <th scope="col">Date</th>
@@ -15,13 +15,13 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let i of course">
+      <tr *ngFor="let i of Courses">
        
-        <td>{{i.courseTitle}}</td>
-        <td>{{i.courseDescription}}></td>
-        <td>{{i.courseDuration}}</td>
-        <td>{{i.courseDate}}</td>
-        <td>{{i.courseVenue}}</td>
+        <td>{{i.title}}</td>
+        <td>{{i.description}}></td>
+        <td>{{i.duration}}</td>
+        <td>{{i.date}}</td>
+        <td>{{i.venue}}</td>
       </tr>
      
     </tbody>

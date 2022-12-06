@@ -11,16 +11,12 @@ export class ViewCourseComponent {
   constructor(private api:ApiService){
 
     api.fetchCourses().subscribe(
-
-
-      (response)=>{
-
-        this.course=response
-
+      (response)=>
+      {
+        this.Courses=response;
       }
     )
   }
-
-  course:any=[]
+  Courses:any=[]
 
 }
