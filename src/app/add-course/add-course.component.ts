@@ -25,6 +25,18 @@ readValue=()=>
     (response:any)=>
     {
       console.log(response)
+      if (response.status=="success")
+        {
+          alert("Course added successfully")
+          this.title=""
+          this.description=""
+          this.duration=""
+          this.date=""
+          this.venue=""
+        }
+        else{
+          alert("Something went wrong")
+        }
       
  }
 )
