@@ -17,5 +17,12 @@ addCourse=(dataToSend:any)=>
   return this.http.post("http://localhost:8080/add",dataToSend)
 }
 
+searchCourse=(data:any)=>
+{
+
+  return this.http.post("http://localhost:8080/search",data)
+}
+
+
 
 }
