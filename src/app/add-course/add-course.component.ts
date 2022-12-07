@@ -19,7 +19,7 @@ constructor(private api:ApiService){}
 
 readValue=()=>
 {
-  let data:any={"courseTitle":this.title,"courseDescription":this.description,"courseDuration":this.duration,"courseDate":this.date,"courseVenue":this.venue}
+  let data:any={"title":this.title,"description":this.description,"duration":this.duration,"date":this.date,"venue":this.venue}
   console.log(data)
   this.api.addCourse(data).subscribe(
     (response:any)=>
